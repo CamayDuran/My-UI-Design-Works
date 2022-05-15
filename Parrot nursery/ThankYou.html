@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+            
+             backgroundImage:(theme)=>({
+                 'd-img':"url('img/d.jpg')",
+                 
+             }) ,
+             spacing: {
+        '74': '19rem',
+      },
+            fontSize: {
+            'xs': '.75rem',
+            'sm': '.875rem',
+            'tiny': '.875rem',
+            'base': '1rem',
+            'lg': '1.125rem',
+            'xl': '1.25rem',
+            '2xl': '1.5rem',
+            '3xl': '1.875rem',
+            '4xl': '2.25rem',
+            '5xl': '3rem',
+            '6xl': '4rem',
+            '7xl': '5rem',
+          }
+          }
+          
+        }
+
+        }
+      </script><title>ThankYou</title>
+</head>
+<body class="bg-d-img bg-cover ">
+    <div class="absolute right-2">
+    <p class="text-5xl font-bold "> X</p>
+   </div>
+    <h1 class="pt-28 pl-44 text-3xl font-bold text-black">✓ Thank you for your <br> purchase!</h1>
+    <p class="ml-44 text-black"> Soon our manager will contact you to <br> clarify the details of the order</p>
+</body>
+</html>

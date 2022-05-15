@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+          
+           backgroundImage:(theme)=>({
+               'd-img':"url('img/d.png')",
+               'e-img':"url('img/e.png')",
+               'help-img':"url('img/help.png')",
+               'sell-img':"url('img/sell.png')",
+               'bankalar-img':"url('img/bankalar.png')",
+           }) ,
+           spacing: {
+      '74': '19rem',
+    },
+          fontSize: {
+          'xs': '.75rem',
+          'sm': '.875rem',
+          'tiny': '.875rem',
+          'base': '1rem',
+          'lg': '1.125rem',
+          'xl': '1.25rem',
+          '2xl': '1.5rem',
+          '3xl': '1.875rem',
+          '4xl': '2.25rem',
+          '5xl': '3rem',
+          '6xl': '4rem',
+          '7xl': '5rem',
+        }
+        }
+        
+      }
+
+      }
+    </script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script>
+      var cont=0;
+  function loopSlider(){
+    var xx= setInterval(function(){
+          switch(cont)
+          {
+          case 0:{
+              $("#slider-1").fadeOut(400);
+              $("#slider-2").delay(400).fadeIn(400);
+              $("#sButton1").removeClass("bg-[#016450]");
+              $("#sButton2").addClass("bg-[#016450]");
+          cont=1;
+          
+          break;
+          }
+          case 1:
+          {
+          
+              $("#slider-2").fadeOut(400);
+              $("#slider-1").delay(400).fadeIn(400);
+              $("#sButton2").removeClass("bg-[#016450]");
+              $("#sButton1").addClass("bg-[#016450]");
+             
+          cont=0;
+          
+          break;
+          }
+          
+          
+          }},8000);
+  
+  }
+  
+  function reinitLoop(time){
+  clearInterval(xx);
+  setTimeout(loopSlider(),time);
+  }
+  
+  
+  
+  function sliderButton1(){
+  
+      $("#slider-2").fadeOut(400);
+      $("#slider-1").delay(400).fadeIn(400);
+      $("#sButton2").removeClass("bg-[#016450]");
+      $("#sButton1").addClass("bg-[#016450]");
+      reinitLoop(4000);
+      cont=0
+      
+      }
+      
+      function sliderButton2(){
+      $("#slider-1").fadeOut(400);
+      $("#slider-2").delay(400).fadeIn(400);
+      $("#sButton1").removeClass("bg-[#016450]");
+      $("#sButton2").addClass("bg-[#016450]");
+      reinitLoop(4000);
+      cont=1
+      
+      }
+  
+      $(window).ready(function(){
+          $("#slider-2").hide();
+          $("#sButton1").addClass("bg-[#016450]");
+          
+  
+          loopSlider();
+       
+          
+      
+      
+      
+      
+      });
+  
+    
+    </script>
+      <script>
+        var cont=0;
+    function loopSlider(){
+      var xx= setInterval(function(){
+            switch(cont)
+            {
+            case 0:{
+                $("#slider-3").fadeOut(400);
+                $("#slider-4").delay(400).fadeIn(400);
+                $("#sButton3").removeClass("bg-orange-600");
+                $("#sButton4").addClass("bg-orange-600");
+            cont=1;
+            
+            break;
+            }
+            case 1:
+            {
+            
+                $("#slider-4").fadeOut(400);
+                $("#slider-3").delay(400).fadeIn(400);
+                $("#sButton4").removeClass("bg-orange-600");
+                $("#sButton3").addClass("bg-orange-600");
+               
+            cont=0;
+            
+            break;
+            }
+            
+            
+            }},8000);
+    
+    }
+    
+    function reinitLoop(time){
+    clearInterval(xx);
+    setTimeout(loopSlider(),time);
+    }
+    
+    
+    
+    function sliderButton3(){
+    
+        $("#slider-4").fadeOut(400);
+        $("#slider-3").delay(400).fadeIn(400);
+        $("#sButton4").removeClass("bg-orange-600");
+        $("#sButton3").addClass("bg-orange-600");
+        reinitLoop(4000);
+        cont=0
+        
+        }
+        
+        function sliderButton4(){
+        $("#slider-3").fadeOut(400);
+        $("#slider-4").delay(400).fadeIn(400);
+        $("#sButton3").removeClass("bg-orange-600");
+        $("#sButton4").addClass("bg-orange-600");
+        reinitLoop(4000);
+        cont=1
+        
+        }
+    
+        $(window).ready(function(){
+            $("#slider-4").hide();
+            $("#sButton3").addClass("bg-orange-600");
+            
+    
+            loopSlider();
+         
+            
+        
+        
+        
+        
+        });
+    
+      
+      </script>
+    <title>FutureHome</title>
+</head>
+<body class="bg-white">
+    <nav class="flex items-center justify-between flex-wrap p-6 text-center">
+        
+        <div class=" bg-12   flex justify-center lg:justify-start lg:px-8">
+          <div class="p-4 cursor-pointer flex items-center">
+              <div>
+                  <img class="w-10" src="img/logo.jpg" alt="">
+                  
+              </div>
+              <div class="text-2xl text-indigo-800 tracking-wide ml-2 font-semibold">Homefinder</div>
+          </div>
+      </div>
+          <div class="block lg:hidden">
+            <button class="flex items-center px-3 py-2 border rounded text-black border-teal-50 hover:text-white hover:border-white">
+              <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+            </button>
+          </div>
+          <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+            <div class="text-base lg:flex-grow font-sans font-bold">
+              <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-red-600 mr-16">
+              Home
+              </a>
+              <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-red-600 mr-16">
+              Buy
+              </a>
+              <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-red-600 mr-16">
+              Sell
+              </a>
+              <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-red-600 mr-16">
+                Listed
+              </a>
+              <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-red-600 mr-16">
+                Review
+              </a>
+            </div>
+            
+            <div class="text-base  font-sans font-bold">
+              <a href="#" class="no-underline  inline-block text-sm px-4 py-2 leading-none border border-emerald-700  text-black lg:mt-0 mr-4 bg-white hover:bg-emrald-600 ">Sign in</a>
+              <a href="#" class="no-underline  inline-block text-sm px-4 py-2 leading-none border  text-white lg:mt-0 mr-20 bg-emerald-700 hover:bg-emrald-900 ">Signup</a>
+          
+            </div>
+          </div>
+        </nav>
+        <div class="bg-d-img bg-cover p-12 rounded rounded-2xl ml-16 mr-16">
+          <h1 class="pt-24 pl-16 text-black text-5xl lg:text-left lg:text-5xl lg:text-bold leading-none w-1/2 font-bold">Find Your Perfect Future Home</h1>
+          <p class="mt-8 ml-16 text-black text-md leading-none w-1/3"> Search confidently with your trusted source of homes for sale or rent.</p>
+          <div class="mt-28 bg-white h-14  font-bold   ml-16 rounded-2xl  ">
+            <a href="#" class=" ml-4 no-underline mr-4 inline-block text-sm px-4 py-2 leading-none  text-black lg:mt-0  bg-white hover:bg-orange-600 ">Buy</a>
+            <a href="#" class="no-underline  mr-4 inline-block text-sm px-4 py-2 leading-none  text-black lg:mt-0  bg-white hover:bg-orange-600 ">Sell</a>
+            <a href="#" class="no-underline  inline-block text-sm px-4 py-2 leading-none   text-black lg:mt-0  bg-white hover:bg-orange-600 ">Rent</a>
+          
+          </div>
+          <div class="  bg-white ml-16 shadow-2xl   ">
+            <div class="ml-4">
+            <select class="mt-10 font-bold mr-12 text-md">
+              <option>Location</option>
+              <option>New York</option>
+              <option>02</option>
+              <option>03</option>
+              <option>04</option>
+              <option>05</option>
+              <option>06</option>
+              <option>07</option>
+              <option>08</option>
+              <option>09</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+             </select>
+             <select  class="mt-10 font-bold mr-12 text-md">
+              <option>Property type</option>
+              <option>Duplex</option>
+              <option>02</option>
+              <option>03</option>
+              <option>04</option>
+              <option>05</option>
+              <option>06</option>
+              <option>07</option>
+              <option>08</option>
+              <option>09</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+             </select>
+             <select class="mt-10 font-bold text-md">
+              <option>Max price</option>
+              <option>$5,000</option>
+              <option>02</option>
+              <option>03</option>
+              <option>04</option>
+              <option>05</option>
+              <option>06</option>
+              <option>07</option>
+              <option>08</option>
+              <option>09</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+             </select>
+            </div>
+            <div class="text-black ml-4 mt-4">
+              <input class=" text-lg  focus:outline-none focus:border-indigo-500" type="" placeholder="New York">
+              <input class=" text-lg   focus:outline-none focus:border-indigo-500" type="" placeholder="Ouplex">
+              <input class=" text-lg   focus:outline-none focus:border-indigo-500" type="" placeholder="$5,000">
+                  <button class="ml-12 text-white h-16 w-16  bg-emerald-700 rounded-2xl">
+                    <svg width="24" height="24" fill="none" aria-hidden="true" class="ml-4 flex-none"><path d="m19 19-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="11" cy="11" r="6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle></svg></button>           
+            </div>
+          </div>
+         
+        </div>
+
+        <div class="mt-20 bg-bankalar-img bg-cover w-full h-44">
+
+        </div>
+
+        <div class="ml-24 pt-20"> 
+           <h1 class="text-4xl text-black font-bold">New Listed Apartments</h1>
+           <p class="mt-4 text-black text-md">With over 1 million+ homes for sale in available on the homefinder </p>
+        </div>
+        <div  class="flex justify-between  mx-auto pb-2 absolute right-32 ">
+          <button id="sButton1" onclick="sliderButton1()" class="bg-inherit text-4xl text-gray-300 hover:text-white border border-gray-400 rounded-full w-16 h-16 " ><</button>
+      <button id="sButton2" onclick="sliderButton2() " class="bg-inherit text-4xl  text-gray-300 hover:text-white border border-gray-400 rounded-full w-16 h-16 ">></button>
+    </div>
+        <div class="sliderAx h-auto">
+          <div id="slider-1" class="container mx-auto">
+            <div class="p-16 mt-10 grid grid-cols-1 gap-6 lg:gap-8 lg:grid-cols-2 lg:grid-cols-3 lg:grid-cols-4 overflow-hidden ">
+              <ul class="mr-10 space-y-8  bg-indigo-50 rounded rounded-2xl cursor-pointer rounded">
+                <li class="text-sm leading-6">
+                 <div class="rounded overflow-hidden h-64">
+                    <img class="p-8 w-full h-full " src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzpy_1-rJxkBTmK3vA9JzrOGu8MkQIZo6Stw&usqp=CAU" alt="" />
+                  
+                  </div> 
+                  <h1 class=" mt-6 text-black text-lg font-bold ml-2">$1,00,000</h1>      
+                  
+                  <p class=" mt-4 text-black text-lg ml-2 font-bold">Harrison Apartments</p>
+                  <div class="flex">
+                    <svg class="h-8 w-8 text-black"  width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="12" cy="11" r="3" />  <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1 -2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z" /></svg>  
+                    <p>San Francisco, CA 94107</p>
+                    <svg class="ml-8  bg-white rounded-full h-8 w-8 text-emerald-700 hover:bg-orange-600"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M12 20l-7 -7a4 4 0 0 1 6.5 -6a.9 .9 0 0 0 1 0a4 4 0 0 1 6.5 6l-7 7" /></svg> 
+                 
+                  </div>
+              </li> 
+              </ul>
+              <ul class="mr-10 space-y-8  bg-indigo-50 rounded rounded-2xl cursor-pointer ">
+                <li class="text-sm leading-6">
+                 <div class="rounded overflow-hidden h-64 ">
+                    <img class="p-8 w-full h-full rounded-2xl" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQizDeYNPJ_S2mObwiWMAMlEslMK1tOS_U6zg&usqp=CAU" alt="" />
+                  
+                  </div> 
+                  <h1 class=" mt-6 text-black text-lg font-bold ml-2">$1,00,000</h1>      
+                  
+                  <p class=" mt-4 text-black text-lg ml-2 font-bold">Harrison Apartments</p>
+                  <div class="flex">
+                    <svg class="h-8 w-8 text-black"  width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="12" cy="11" r="3" />  <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1 -2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z" /></svg>  
+                    <p>San Francisco, CA 94107</p>
+                    <svg class="ml-8  bg-white rounded-full h-8 w-8 text-emerald-700 hover:bg-orange-600"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M12 20l-7 -7a4 4 0 0 1 6.5 -6a.9 .9 0 0 0 1 0a4 4 0 0 1 6.5 6l-7 7" /></svg> 
+                 
+                  </div>
+              </li> 
+              </ul>
+                    
+              <ul class="mr-10 space-y-8  bg-indigo-50 rounded rounded-2xl cursor-pointer">
+                <li class="text-sm leading-6">
+                 <div class="rounded overflow-hidden h-64 ">
+                    <img class="p-8 w-full h-full rounded-2xl" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoVTD4YBdFRppEPp7po6jQGhsAm8W9Jh1ASA&usqp=CAU" alt="" />
+                  
+                  </div> 
+                  <h1 class=" mt-6 text-black text-lg font-bold ml-2">$1,00,000</h1>      
+                  
+                  <p class=" mt-4 text-black text-lg ml-2 font-bold">Harrison Apartments</p>
+                  <div class="flex">
+                    <svg class="h-8 w-8 text-black"  width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="12" cy="11" r="3" />  <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1 -2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z" /></svg>  
+                    <p>San Francisco, CA 94107</p>
+                    <svg class="ml-8  bg-white rounded-full h-8 w-8 text-emerald-700 hover:bg-orange-600"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M12 20l-7 -7a4 4 0 0 1 6.5 -6a.9 .9 0 0 0 1 0a4 4 0 0 1 6.5 6l-7 7" /></svg> 
+                 
+                  </div>
+              </li> 
+              </ul>
+              <ul class="mr-10 space-y-8  bg-indigo-50 rounded rounded-2xl cursor-pointer ">
+                <li class="text-sm leading-6">
+                 <div class="rounded overflow-hidden  h-64">
+                    <img class="p-8 w-full h-full rounded-2xl" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2gduds0rF1eZLFwWsoITLdpYtDhtbAfwxZw&usqp=CAU" alt="" />
+                  
+                  </div> 
+                  <h1 class=" mt-6 text-black text-lg font-bold ml-2">$1,00,000</h1>      
+                  
+                  <p class=" mt-4 text-black text-lg ml-2 font-bold">Harrison Apartments</p>
+                  <div class="flex">
+                    <svg class="h-8 w-8 text-black"  width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="12" cy="11" r="3" />  <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1 -2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z" /></svg>  
+                    <p>San Francisco, CA 94107</p>
+                    <svg class="ml-8  bg-white rounded-full h-8 w-8 text-emerald-700 hover:bg-orange-600"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M12 20l-7 -7a4 4 0 0 1 6.5 -6a.9 .9 0 0 0 1 0a4 4 0 0 1 6.5 6l-7 7" /></svg> 
+                 
+                  </div>
+              </li> 
+              </ul>
+            </div> <!-- container -->
+          <br>
+          </div>
+    
+          <div id="slider-2" class="container mx-auto">
+            <div class="p-16 mt-10 grid grid-cols-1 gap-6 lg:gap-8 lg:grid-cols-2 lg:grid-cols-3 lg:grid-cols-4 max-h-[33rem] overflow-hidden">
+              <ul class="mr-10 space-y-8  bg-indigo-50 rounded rounded-2xl cursor-pointer roun">
+                <li class="text-sm leading-6">
+                 <div class="rounded overflow-hidden  h-64">
+                    <img class="p-8 w-full h-full rounded-2xl" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSha9wyRwNo4UUFBOuNxprh1TdPE2WwFidk_g&usqp=CAU" alt="" />
+                  
+                  </div> 
+                  <h1 class=" mt-6 text-black text-lg font-bold ml-2">$1,00,000</h1>      
+                  
+                  <p class=" mt-4 text-black text-lg ml-2 font-bold">Harrison Apartments</p>
+                  <div class="flex">
+                    <svg class="h-8 w-8 text-black"  width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="12" cy="11" r="3" />  <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1 -2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z" /></svg>  
+                    <p>San Francisco, CA 94107</p>
+                    <svg class="ml-8  bg-white rounded-full h-8 w-8 text-emerald-700 hover:bg-orange-600"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M12 20l-7 -7a4 4 0 0 1 6.5 -6a.9 .9 0 0 0 1 0a4 4 0 0 1 6.5 6l-7 7" /></svg> 
+                 
+                  </div>
+              </li> 
+              </ul>
+              <ul class="mr-10 space-y-8  bg-indigo-50 rounded rounded-2xl cursor-pointer roun">
+                <li class="text-sm leading-6">
+                 <div class="rounded overflow-hidden h-64">
+                    <img class="p-8 w-full h-full rounded-2xl" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS41hsKXY7IFYSL17U6-LfUeA9dSdjuJEj8xg&usqp=CAU" alt="" />
+                  
+                  </div> 
+                  <h1 class=" mt-6 text-black text-lg font-bold ml-2">$1,00,000</h1>      
+                  
+                  <p class=" mt-4 text-black text-lg ml-2 font-bold">Harrison Apartments</p>
+                  <div class="flex">
+                    <svg class="h-8 w-8 text-black"  width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="12" cy="11" r="3" />  <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1 -2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z" /></svg>  
+                    <p>San Francisco, CA 94107</p>
+                    <svg class="ml-8  bg-white rounded-full h-8 w-8 text-emerald-700 hover:bg-orange-600"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M12 20l-7 -7a4 4 0 0 1 6.5 -6a.9 .9 0 0 0 1 0a4 4 0 0 1 6.5 6l-7 7" /></svg> 
+                 
+                  </div>
+              </li> 
+              </ul>
+                    
+              <ul class="mr-10 space-y-8  bg-indigo-50 rounded rounded-2xl cursor-pointer roun">
+                <li class="text-sm leading-6">
+                 <div class="rounded overflow-hidden h-64 ">
+                    <img class="p-8 w-full h-full rounded-2xl" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-N2FtGFarNzwIrgUThBfqsgPQHMu7Vx6rEg&usqp=CAU" alt="" />
+                  
+                  </div> 
+                  <h1 class=" mt-6 text-black text-lg font-bold ml-2">$1,00,000</h1>      
+                  
+                  <p class=" mt-4 text-black text-lg ml-2 font-bold">Harrison Apartments</p>
+                  <div class="flex">
+                    <svg class="h-8 w-8 text-black"  width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="12" cy="11" r="3" />  <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1 -2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z" /></svg>  
+                    <p>San Francisco, CA 94107</p>
+                    <svg class="ml-8  bg-white rounded-full h-8 w-8 text-emerald-700 hover:bg-orange-600"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M12 20l-7 -7a4 4 0 0 1 6.5 -6a.9 .9 0 0 0 1 0a4 4 0 0 1 6.5 6l-7 7" /></svg> 
+                 
+                  </div>
+              </li> 
+              </ul>
+              <ul class="mr-10 space-y-8  bg-indigo-50 rounded rounded-2xl cursor-pointer roun">
+                <li class="text-sm leading-6">
+                 <div class="rounded overflow-hidden  h-64 ">
+                    <img class="p-8 w-full h-full rounded-2xl" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1vTJ8xJp7P7E6G4PiVdhhz9_Fq7eez7cVnw&usqp=CAU" alt="" />
+                  
+                  </div> 
+                  <h1 class=" mt-6 text-black text-lg font-bold ml-2">$1,00,000</h1>      
+                  
+                  <p class=" mt-4 text-black text-lg ml-2 font-bold">Harrison Apartments</p>
+                  <div class="flex">
+                    <svg class="h-8 w-8 text-black"  width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="12" cy="11" r="3" />  <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1 -2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z" /></svg>  
+                    <p>San Francisco, CA 94107</p>
+                    <svg class="ml-8  bg-white rounded-full h-8 w-8 text-emerald-700 hover:bg-orange-600"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M12 20l-7 -7a4 4 0 0 1 6.5 -6a.9 .9 0 0 0 1 0a4 4 0 0 1 6.5 6l-7 7" /></svg> 
+                 
+                  </div>
+              </li> 
+              </ul>
+            </div> <!-- container -->
+          <br>
+          </div>
+        </div>
+     
+   
+    
+      
+    <h1 class="mt-8 text-green-800 text-md text-center font-bold">OUR SERVİCES </h1>
+    <h1 class="mt-4 text-black font-bold text-4xl text-center">How homefinder can help</h1>
+    <div class="pl-40  pr-40 mt-16 grid grid-cols-1 gap-6 lg:gap-8 lg:grid-cols-2 lg:grid-cols-3 lg:grid-cols-4 max-h-[33rem] overflow-hidden">
+      <ul class="space-y-8  bg-white cursor-pointer  hover:drop-shadow-2xl ">
+        <li class="text-sm leading-6 ">
+         <div class="ml-16 rounded overflow-hidden bg-white hover:bg-green-800 h-14 w-14 rounded-full">
+            <img class="w-10 h-10 rounded-full ml-2 mt-2" src="img/a1.PNG" alt="" />
+          
+          </div> 
+          <h1 class=" mt-10 text-black text-lg text-center font-bold ml-2">Buy your dream <br> home</h1>      
+          
+      </li> 
+      </ul>
+      <ul class="space-y-8  bg-white cursor-pointer  hover:drop-shadow-2xl">
+          <li class="text-sm leading-6">
+           <div class="ml-16 rounded overflow-hidden bg-white hover:bg-green-800 h-14 w-14 rounded-full ">
+              <img class="w-10 h-10 rounded-full ml-2 mt-2" src="img/a2.png" alt="" />
+            
+            </div> 
+            <h1 class=" mt-10 text-black text-lg text-center font-bold ml-2">Easily Sell your<br> home</h1>      
+          
+        </li> 
+        </ul>
+            
+        <ul class="space-y-8  bg-white cursor-pointer  hover:drop-shadow-2xl">
+          <li class="text-sm leading-6">
+           <div class="ml-16 rounded overflow-hidden bg-white hover:bg-green-800 h-14 w-14 rounded-full">
+              <img class="w-10 h-10 rounded-full ml-2 mt-2" src="img/a3.PNG" alt="" />
+            
+            </div> 
+            <h1 class=" mt-10 text-black text-lg text-center font-bold ml-2">Rent your home<br>you love</h1>      
+          
+        </li> 
+        </ul> 
+        <ul class="space-y-8  bg-white cursor-pointer hover:drop-shadow-2xl">
+          <li class="text-sm leading-6">
+           <div class="ml-16 rounded overflow-hidden bg-white hover:bg-green-800 h-14 w-14 rounded-full">
+              <img class="w-10 h-10 rounded-full ml-2 mt-2" src="img/a4.PNG" alt="" />
+            
+            </div> 
+            <h1 class=" mt-10 text-black text-lg text-center font-bold ml-2">Be partner with<br>Homefinder</h1>      
+          
+        </li> 
+        </ul>
+    </div>
+    <div class="lg:flex">
+      <div class="mt-16 lg:w-1/2  bg-help-img bg-cover p-8">
+          
+      </div>
+      <div class=" mt-44  lg:w-1/2 ml-12 bg-white">
+          <h1 class="text-green-800 text-lg font-bold">ABOUT US</h1>
+          <h1 class="mr-52 mt-6 text-black leading-none text-4xl font-bold">Helping People to  Find their Home</h1>
+      <p class="mt-10 mr-52">Homefinder can help you easily find a home of the, apartment for rent, sell and buy that you'll love. As with any new technology, building designers experiment and learn from each other in the pursuit of new solutions, can help you easily find a home, apartment for rent, sell and buy that you'll love.</p>
+      <br>
+      <a href="#" class="flex no-underline rounded-lg inline-block text-sm h-12 w-40 text-center m px-4 py-2 leading-none border border-emerald-700  text-white lg:mt-0 mr-4 bg-emerald-700  ">Know more</a>    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    </div>
+  </div>
+  <div class="lg:flex">
+    <div class=" mt-44  lg:w-1/2 ml-12 bg-white">
+      <h1 class="text-green-800 text-lg font-bold">SELL HOME</h1>
+      <h1 class="mr-52 mt-6 text-black text-4xl leading-none font-bold">Home selling is now made easier.</h1>
+  <p class="mt-10 mr-52">The Winning Offer Doesn't Always Have To Be The Highest. Our Walter Buying Agent Help With Making The Best Offer For Your Situation. We Always Include Technical Checks, Reservation Of Funding, And When To Move In Our Final Bidding Strategy. Thanks To Walter You No Longer.</p>
+  <br>
+  <a href="#" class="no-underline rounded-lg inline-block text-sm h-12 w-40 text-center m px-4 py-2 leading-none border border-emerald-700  text-white lg:mt-0 mr-4 bg-emerald-700  ">Know more</a>    
+<br>
+<br>
+<br>
+<br>
+<br>
+</div>
+    <div class="mt-16 lg:w-1/2  bg-sell-img bg-cover p-8">
+        
+    </div>
+    
+</div>
+<div class="p-32 bg-[#f5eee8]">
+  <h1 class="font-bold text-4xl leading-none text-black">Find Future Space <br> At Budget</h1>
+  <nav class="flex  justify-between flex-wrap p-6 bg-[#f5eee8]">
+        
+    
+      <div class="block lg:hidden">
+        <button class="flex items-center px-3 py-2 border rounded text-black border-teal-50 hover:text-white hover:border-white">
+          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+        </button>
+      </div>
+      <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+        <div class="mt-10 text-base lg:flex-grow font-sans font-bold bg-[#f5eee8] text-black ">
+          <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 bg-white rounded-2xl px-4 py-2 hover:bg-black hover:text-white mr-12">
+          Appartment
+          </a>
+          <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 bg-white rounded-2xl px-4 py-2 hover:bg-black hover:text-white mr-12">
+          Office Space
+          </a>
+          <a href="Prices.html" class="block mt-4 lg:inline-block lg:mt-0 bg-white rounded-2xl px-4 py-2 hover:bg-black hover:text-white mr-12">
+          Full Property
+          </a>
+          <a href="Prices.html" class="block mt-4 lg:inline-block lg:mt-0 bg-white rounded-2xl px-4 py-2 hover:bg-black hover:text-white mr-12">
+            Share House
+            </a>
+        </div>
+        
+        <div class="mt-10 text-base  font-sans font-bold">
+          <a href="login.html" class="no-underline bg-inherit inline-block text-sm px-4 py-2 leading-none border  text-orange-600 lg:mt-0 mr-20  hover:bg-black hover:text-white rounded-sm border-orange-600">Explore All</a>
+        </div>
+      </div>
+    </nav>
+    <div class="sliderAx h-auto">
+      <div id="slider-3" class="container mx-auto">
+        <div class="p-8 mt-10 grid grid-cols-1 gap-6 lg:gap-8 lg:grid-cols-2 lg:grid-cols-3 lg:grid-cols-4  overflow-hidden">
+          <ul class="mr-10 space-y-8    bg-white rounded-2xl cursor-pointer roun">
+            <li class="text-sm leading-6">
+             <div class="rounded overflow-hidden w-56 h-56 ">
+                <img class="p-4 w-full h-full rounded-2xl" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtIcMkVeJ1mPfv5D7ikZ84ZA8ysLfc7F7cQQ&usqp=CAU" alt="" />
+              
+              </div> 
+              <h1 class=" mt-6 text-black text-md font-bold ml-2">Buildings of chicago</h1>      
+              
+              <p class=" mt-2 text-grey-500 text-xs ml-2 ">San Francisco,Stoutest Tower CA 94116</p>
+              <div class="flex">
+                <img class="h-10 w-10" src="img/icon1.PNG" alt="">
+                <p class="text-grey-500">3 Bed</p>
+                <img class="h-10 w-10" src="img/icon2.PNG" alt="">
+                <p class="text-grey-500">3 Bath</p>
+                <img class="h-10 w-10" src="img/icon3.PNG" alt="">
+                <p class="text-grey-500">1800 sqft</p>
+              </div>
+              <div class="flex mt-16">
+                <h1 class="text-black font-bold text-2xl "> $26,00,000 </h1>
+                <div class=" text-base  font-sans ">
+                  <a href="#" class=" no-underline bg-green-800 inline-block text-sm px-4 py-2 ml-2 leading-none border  text-white lg:mt-0  rounded-lg">Book Now</a>
+                </div>
+              </div>
+          </li> 
+          </ul>
+          <ul class="mr-10 space-y-8    bg-white rounded-2xl cursor-pointer roun">
+            <li class="text-sm leading-6">
+             <div class="rounded overflow-hidden  w-56 h-56">
+                <img class="p-4 w-full h-full rounded-2xl" src="data:image/jpeg;base64,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" alt="" />
+              
+              </div> 
+              <h1 class=" mt-6 text-black text-md font-bold ml-2">Buildings of chicago</h1>      
+              
+              <p class=" mt-2 text-grey-500 text-xs ml-2 ">San Francisco,Stoutest Tower CA 94116</p>
+              <div class="flex">
+                <img class="h-10 w-10" src="img/icon1.PNG" alt="">
+                <p class="text-grey-500">3 Bed</p>
+                <img class="h-10 w-10" src="img/icon2.PNG" alt="">
+                <p class="text-grey-500">3 Bath</p>
+                <img class="h-10 w-10" src="img/icon3.PNG" alt="">
+                <p class="text-grey-500">1800 sqft</p>
+              </div>
+              <div class="flex mt-10">
+                <h1 class="text-black font-bold text-2xl "> $26,00,000 </h1>
+                <div class=" text-base  font-sans ">
+                  <a href="#" class=" no-underline bg-green-800 inline-block text-sm px-4 py-2 ml-2 leading-none border  text-white lg:mt-0  rounded-lg">Book Now</a>
+                </div>
+              </div>
+          </li> 
+          </ul>
+                
+          <ul class="mr-10 space-y-8    bg-white rounded-2xl cursor-pointer roun">
+            <li class="text-sm leading-6">
+             <div class="rounded overflow-hidden  w-56 h-56 ">
+                <img class="p-4 w-full h-full rounded-2xl" src="data:image/jpeg;base64,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" alt="" />
+              
+              </div> 
+              <h1 class=" mt-6 text-black text-md font-bold ml-2">Buildings of chicago</h1>      
+              
+              <p class=" mt-2 text-grey-500 text-xs ml-2 ">San Francisco,Stoutest Tower CA 94116</p>
+              <div class="flex">
+                <img class="h-10 w-10" src="img/icon1.PNG" alt="">
+                <p class="text-grey-500">3 Bed</p>
+                <img class="h-10 w-10" src="img/icon2.PNG" alt="">
+                <p class="text-grey-500">3 Bath</p>
+                <img class="h-10 w-10" src="img/icon3.PNG" alt="">
+                <p class="text-grey-500">1800 sqft</p>
+              </div>
+              <div class="flex mt-10">
+                <h1 class="text-black font-bold text-2xl "> $26,00,000 </h1>
+                <div class=" text-base  font-sans ">
+                  <a href="#" class=" no-underline bg-green-800 inline-block text-sm px-4 py-2 ml-2 leading-none border  text-white lg:mt-0  rounded-lg">Book Now</a>
+                </div>
+              </div>
+          </li> 
+          </ul>
+          <ul class="mr-10 space-y-8    bg-white rounded-2xl cursor-pointer roun">
+            <li class="text-sm leading-6">
+             <div class="rounded overflow-hidden  w-56 h-56">
+                <img class="p-4 w-full h-full rounded-2xl" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4qF7zNIell9nWPFW9959nF1mXyfKs7WDCQg&usqp=CAU" alt="" />
+              
+              </div> 
+              <h1 class=" mt-6 text-black text-md font-bold ml-2">Buildings of chicago</h1>      
+              
+              <p class=" mt-2 text-grey-500 text-xs ml-2 ">San Francisco,Stoutest Tower CA 94116</p>
+              <div class="flex">
+                <img class="h-10 w-10" src="img/icon1.PNG" alt="">
+                <p class="text-grey-500">3 Bed</p>
+                <img class="h-10 w-10" src="img/icon2.PNG" alt="">
+                <p class="text-grey-500">3 Bath</p>
+                <img class="h-10 w-10" src="img/icon3.PNG" alt="">
+                <p class="text-grey-500">1800 sqft</p>
+              </div>
+              <div class="flex mt-10">
+                <h1 class="text-black font-bold text-2xl "> $26,00,000 </h1>
+                <div class=" text-base  font-sans ">
+                  <a href="#" class=" no-underline bg-green-800 inline-block text-sm px-4 py-2 ml-2 leading-none border  text-white lg:mt-0  rounded-lg">Book Now</a>
+                </div>
+              </div>
+          </li> 
+          </ul>
+        </div> <!-- container -->
+      <br>
+      </div>
+
+      <div id="slider-4" class="container mx-auto">
+        <div class="p-16 mt-10 grid grid-cols-1 gap-6 lg:gap-8 lg:grid-cols-2 lg:grid-cols-3 lg:grid-cols-4 max-h-[33rem] overflow-hidden">
+          <ul class="mr-10 space-y-8    bg-white rounded-2xl cursor-pointer roun">
+            <li class="text-sm leading-6">
+             <div class="rounded overflow-hidden  w-56 h-56 ">
+                <img class="p-4 w-full h-full rounded-2xl" src="https://i2.wp.com/hepev.com/wp-content/uploads/2016/02/minimalist-yatak-odasi-dekorasyonu.jpg?resize=855%2C575" alt="" />
+              
+              </div> 
+              <h1 class=" mt-6 text-black text-md font-bold ml-2">Buildings of chicago</h1>      
+              
+              <p class=" mt-2 text-grey-500 text-xs ml-2 ">San Francisco,Stoutest Tower CA 94116</p>
+              <div class="flex">
+                <img class="h-10 w-10" src="img/icon1.PNG" alt="">
+                <p class="text-grey-500">3 Bed</p>
+                <img class="h-10 w-10" src="img/icon2.PNG" alt="">
+                <p class="text-grey-500">3 Bath</p>
+                <img class="h-10 w-10" src="img/icon3.PNG" alt="">
+                <p class="text-grey-500">1800 sqft</p>
+              </div>
+              <div class="flex mt-10">
+                <h1 class="text-black font-bold text-2xl "> $26,00,000 </h1>
+                <div class=" text-base  font-sans ">
+                  <a href="#" class=" no-underline bg-green-800 inline-block text-sm px-4 py-2 ml-2 leading-none border  text-white lg:mt-0  rounded-lg">Book Now</a>
+                </div>
+              </div>
+          </li> 
+          </ul>
+          <ul class="mr-10 space-y-8    bg-white rounded-2xl cursor-pointer roun">
+            <li class="text-sm leading-6">
+             <div class="rounded overflow-hidden  w-56 h-56 ">
+                <img class="p-4 w-full h-full rounded-2xl" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSp81mkaexsDJmWw6rsct5OuT3M0Y0QQ2qDw&usqp=CAU" alt="" />
+              
+              </div> 
+              <h1 class=" mt-6 text-black text-md font-bold ml-2">Buildings of chicago</h1>      
+              
+              <p class=" mt-2 text-grey-500 text-xs ml-2 ">San Francisco,Stoutest Tower CA 94116</p>
+              <div class="flex">
+                <img class="h-10 w-10" src="img/icon1.PNG" alt="">
+                <p class="text-grey-500">3 Bed</p>
+                <img class="h-10 w-10" src="img/icon2.PNG" alt="">
+                <p class="text-grey-500">3 Bath</p>
+                <img class="h-10 w-10" src="img/icon3.PNG" alt="">
+                <p class="text-grey-500">1800 sqft</p>
+              </div>
+              <div class="flex mt-10">
+                <h1 class="text-black font-bold text-2xl "> $26,00,000 </h1>
+                <div class=" text-base  font-sans ">
+                  <a href="#" class=" no-underline bg-green-800 inline-block text-sm px-4 py-2 ml-2 leading-none border  text-white lg:mt-0  rounded-lg">Book Now</a>
+                </div>
+              </div>
+          </li> 
+          </ul>
+                
+          <ul class="mr-10 space-y-8    bg-white rounded-2xl cursor-pointer roun">
+            <li class="text-sm leading-6">
+             <div class="rounded overflow-hidden  w-56 h-56">
+                <img class="p-4 w-full h-full rounded-2xl" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6IrmBl8KQRzNyH6hG6jJ4GwajsS3C3Wyojw&usqp=CAU" alt="" />
+              
+              </div> 
+              <h1 class=" mt-6 text-black text-md font-bold ml-2">Buildings of chicago</h1>      
+              
+              <p class=" mt-2 text-grey-500 text-xs ml-2 ">San Francisco,Stoutest Tower CA 94116</p>
+              <div class="flex">
+                <img class="h-10 w-10" src="img/icon1.PNG" alt="">
+                <p class="text-grey-500">3 Bed</p>
+                <img class="h-10 w-10" src="img/icon2.PNG" alt="">
+                <p class="text-grey-500">3 Bath</p>
+                <img class="h-10 w-10" src="img/icon3.PNG" alt="">
+                <p class="text-grey-500">1800 sqft</p>
+              </div>
+              <div class="flex mt-10">
+                <h1 class="text-black font-bold text-2xl "> $26,00,000 </h1>
+                <div class=" text-base  font-sans ">
+                  <a href="#" class=" no-underline bg-green-800 inline-block text-sm px-4 py-2 ml-2 leading-none border  text-white lg:mt-0  rounded-lg">Book Now</a>
+                </div>
+              </div>
+          </li> 
+          </ul>
+          <ul class="mr-10 space-y-8    bg-white rounded-2xl cursor-pointer roun">
+            <li class="text-sm leading-6">
+             <div class="rounded overflow-hidden  w-56 h-56 ">
+                <img class="p-4 w-full h-full rounded-2xl" src="data:image/jpeg;base64,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" alt="" />
+              
+              </div> 
+              <h1 class=" mt-6 text-black text-md font-bold ml-2">Buildings of chicago</h1>      
+              
+              <p class=" mt-2 text-grey-500 text-xs ml-2 ">San Francisco,Stoutest Tower CA 94116</p>
+              <div class="flex">
+                <img class="h-10 w-10" src="icon1.PNG" alt="">
+                <p class="text-grey-500">3 Bed</p>
+                <img class="h-10 w-10" src="icon2.PNG" alt="">
+                <p class="text-grey-500">3 Bath</p>
+                <img class="h-10 w-10" src="icon3.PNG" alt="">
+                <p class="text-grey-500">1800 sqft</p>
+              </div>
+              <div class="flex mt-10">
+                <h1 class="text-black font-bold text-2xl "> $26,00,000 </h1>
+                <div class=" text-base  font-sans ">
+                  <a href="#" class=" no-underline bg-green-800 inline-block text-sm px-4 py-2 ml-2 leading-none border  text-white lg:mt-0  rounded-lg">Book Now</a>
+                </div>
+              </div>
+          </li> 
+          </ul>
+        </div> <!-- container -->
+      <br>
+      </div>
+      <div  class="flex  mx-auto pb-2 justify-center text-center">
+        <button id="sButton3" onclick="sliderButton3()" class="bg-inherit text-4xl text-gray-400 hover:text-white border border-gray-400 rounded-full w-16 h-16 " ><</button>
+    <button id="sButton4" onclick="sliderButton4() " class="bg-inherit text-4xl  text-gray-400 hover:text-white border border-gray-400 rounded-full w-16 h-16 ">></button>
+  </div>
+    </div>
+    
+    
+    
+</div> 
+<div class="bg-white mt-16">
+<h1 class="text-center text-md font-bold text-green-700">CLIENT REVIEWS</h1>
+<h1 class="text-center text-4xl font-bold text-black">We Build In Trust With Our <br> Clients & Agents</br></h1>
+
+<div class="p-10 mt-10 grid grid-cols-1 gap-6 lg:gap-8 lg:grid-cols-2 lg:grid-cols-3 max-h-[33rem] overflow-hidden">
+  <ul class="space-y-8  shadow-2xl transform duration-200 cursor-pointer">
+    <li class="text-sm leading-6">
+     <div class="flex ml-6">
+       <div class="bg-green-600 mr-2 ">
+         <svg class=" text-white"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M12 17.75l-6.172 3.245 1.179-6.873-4.993-4.867 6.9-1.002L12 2l3.086 6.253 6.9 1.002-4.993 4.867 1.179 6.873z" /></svg>
+       </div>
+       <div class="bg-green-600 mr-2">
+         <svg class=" text-white"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M12 17.75l-6.172 3.245 1.179-6.873-4.993-4.867 6.9-1.002L12 2l3.086 6.253 6.9 1.002-4.993 4.867 1.179 6.873z" /></svg>
+       </div>
+       <div class="bg-green-600 mr-2">
+         <svg class=" text-white"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M12 17.75l-6.172 3.245 1.179-6.873-4.993-4.867 6.9-1.002L12 2l3.086 6.253 6.9 1.002-4.993 4.867 1.179 6.873z" /></svg>
+       </div>
+       <div class="bg-green-600 mr-2">
+         <svg class=" text-white"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M12 17.75l-6.172 3.245 1.179-6.873-4.993-4.867 6.9-1.002L12 2l3.086 6.253 6.9 1.002-4.993 4.867 1.179 6.873z" /></svg>
+       </div>
+       <div class="bg-green-600 ">
+         <svg class=" text-white"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M12 17.75l-6.172 3.245 1.179-6.873-4.993-4.867 6.9-1.002L12 2l3.086 6.253 6.9 1.002-4.993 4.867 1.179 6.873z" /></svg>
+       </div>
+       </div>
+       <p class="ml-6 mt-6 mr-6">"This plugin is amazing with the current version,I can't imagine it, how cool will it be when you finish the all"</p>
+  
+       <div class="flex mt-6 mb-8">
+        <img class="w-20 h-20 rounded-full ml-6" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1xBa_u60mOkYj-uZ7PKckYRWd7A9CRgT5Ow&usqp=CAU" alt="" width="384" height="512">
+        <h1 class="ml-6 mt-2 font-bold text-lg">Michele Smith <a class="text-sm font-semibold"><br> CDO at Weblabx</a></h1>
+      </div>
+      
+      </li>  
+  </ul>
+  <ul class="space-y-8  shadow-2xl transform duration-200 cursor-pointer">
+    <li class="text-sm leading-6">
+     <div class="flex ml-6">
+       <div class="bg-green-600 mr-2 ">
+         <svg class=" text-white"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M12 17.75l-6.172 3.245 1.179-6.873-4.993-4.867 6.9-1.002L12 2l3.086 6.253 6.9 1.002-4.993 4.867 1.179 6.873z" /></svg>
+       </div>
+       <div class="bg-green-600 mr-2">
+         <svg class=" text-white"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M12 17.75l-6.172 3.245 1.179-6.873-4.993-4.867 6.9-1.002L12 2l3.086 6.253 6.9 1.002-4.993 4.867 1.179 6.873z" /></svg>
+       </div>
+       <div class="bg-green-600 mr-2">
+         <svg class=" text-white"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M12 17.75l-6.172 3.245 1.179-6.873-4.993-4.867 6.9-1.002L12 2l3.086 6.253 6.9 1.002-4.993 4.867 1.179 6.873z" /></svg>
+       </div>
+       <div class="bg-green-600 mr-2">
+         <svg class=" text-white"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M12 17.75l-6.172 3.245 1.179-6.873-4.993-4.867 6.9-1.002L12 2l3.086 6.253 6.9 1.002-4.993 4.867 1.179 6.873z" /></svg>
+       </div>
+       <div class="bg-green-600 ">
+         <svg class=" text-white"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M12 17.75l-6.172 3.245 1.179-6.873-4.993-4.867 6.9-1.002L12 2l3.086 6.253 6.9 1.002-4.993 4.867 1.179 6.873z" /></svg>
+       </div>
+       </div>
+       <p class="ml-6 mt-6 mr-6">"This plugin is amazing with the current version,I can't imagine it, how cool will it be when you finish the all"</p>
+  
+       <div class="flex mt-6 mb-8">
+        <img class="w-20 h-20 rounded-full ml-6" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1xBa_u60mOkYj-uZ7PKckYRWd7A9CRgT5Ow&usqp=CAU" alt="" width="384" height="512">
+        <h1 class="ml-6 mt-2 font-bold text-lg">David Andersin <a class="text-sm font-semibold"><br> CDO at SoftwareGix</a></h1>
+      </div>
+      
+      </li>  
+  </ul>
+        
+  <ul class="space-y-8  shadow-2xl transform duration-200 cursor-pointer">
+    <li class="text-sm leading-6">
+     <div class="flex ml-6">
+       <div class="bg-green-600 mr-2 ">
+         <svg class=" text-white"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M12 17.75l-6.172 3.245 1.179-6.873-4.993-4.867 6.9-1.002L12 2l3.086 6.253 6.9 1.002-4.993 4.867 1.179 6.873z" /></svg>
+       </div>
+       <div class="bg-green-600 mr-2">
+         <svg class=" text-white"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M12 17.75l-6.172 3.245 1.179-6.873-4.993-4.867 6.9-1.002L12 2l3.086 6.253 6.9 1.002-4.993 4.867 1.179 6.873z" /></svg>
+       </div>
+       <div class="bg-green-600 mr-2">
+         <svg class=" text-white"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M12 17.75l-6.172 3.245 1.179-6.873-4.993-4.867 6.9-1.002L12 2l3.086 6.253 6.9 1.002-4.993 4.867 1.179 6.873z" /></svg>
+       </div>
+       <div class="bg-green-600 mr-2">
+         <svg class=" text-white"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M12 17.75l-6.172 3.245 1.179-6.873-4.993-4.867 6.9-1.002L12 2l3.086 6.253 6.9 1.002-4.993 4.867 1.179 6.873z" /></svg>
+       </div>
+       <div class="bg-green-600 ">
+         <svg class=" text-white"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M12 17.75l-6.172 3.245 1.179-6.873-4.993-4.867 6.9-1.002L12 2l3.086 6.253 6.9 1.002-4.993 4.867 1.179 6.873z" /></svg>
+       </div>
+       </div>
+       <p class="ml-6 mt-6 mr-6">"This plugin is amazing with the current version,I can't imagine it, how cool will it be when you finish the all"</p>
+  
+       <div class="flex mt-6 mb-8">
+        <img class="w-20 h-20 rounded-full ml-6" src="data:image/jpeg;base64,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" alt="" width="384" height="512">
+        <h1 class="ml-6 mt-2 font-bold text-lg">Michele Smith <a class="text-sm font-semibold"><br> CDO at Amazon.com</a></h1>
+      </div>
+      
+      </li>  
+  </ul>
+</div>
+<div class="flex text-center justify-center">
+  <div class=" text-base  font-sans font-bold">
+    <a href="#" class=" ml-8 no-underline bg-inherit inline-block text-2xl font-bold px-4 py-4 leading-none border  text-grey-500 lg:mt-0 mr-2 hover:bg-orange-600 hover:text-white rounded-full"> < </a>
+  </div>
+  <div class="  text-base  font-sans font-bold">
+    <a href="#" class="no-underline bg-inherit inline-block text-2xl font-bold px-4 py-4 leading-none border  text-grey-500 lg:mt-0 hover:bg-orange-600 hover:text-white  rounded-full"> > </a>
+  </div>
+</div>
+</div>
+
+<div class="p-32 bg-white">
+<h1 class="text-lg text-green-600">JOIN WITH US</h1>
+<div class="flex">
+<h1 class="text-black font-bold text-bold text-4xl">Do You Want To Be An Agent?</h1>
+<div class=" mt-12 ml-3/4 text-base  font-sans font-bold">
+  <a href="#" class="right-0 no-underline bg-green-800 inline-block text-sm px-8 py-4 leading-none border  text-white lg:mt-0    rounded-lg ">Join Now</a>
+</div>
+</div>
+<div class="p-10  grid grid-cols-1 gap-6 lg:gap-8 lg:grid-cols-2 lg:grid-cols-3 max-h-[33rem] overflow-hidden">
+  <ul class="space-y-8  transform duration-200 cursor-pointer">
+    <li class="text-sm leading-6">
+     <img src="img/a.PNG" alt="">
+     <h1 class="text-2xl text-black font-bold">- Michael Roy</h1>
+     <p class="text-grey-600 ml-8">Realstate Agent</p>
+      </li>  
+  </ul>
+  <ul class="space-y-8   transform duration-200 cursor-pointer">
+    <li class="text-sm leading-6 mt-16">
+     <img src="img/b.PNG" alt="">
+      <h1 class="text-2xl text-black font-bold">- Sofia Rose</h1>
+      <p class="text-grey-600 ml-8">Realstate Agent</p>
+       
+    </li>  
+  </ul>
+        
+  <ul class="space-y-8 transform duration-200 cursor-pointer">
+    <li class="text-sm leading-6 mt-32">
+     <img src=" img/c.PNG" alt="">
+     <h1 class="text-2xl text-black font-bold">- James Watt</h1>
+     <p class="text-grey-600 ml-8">Realstate Agent</p>
+     
+      </li>  
+  </ul>
+</div>
+</div>
+<div class="flex">
+  <div class="hidden lg:flex items-center justify-center  flex-1 h-screen" >
+     
+<img class="w-full ml-16"  src="img/e.PNG" alt="">
+     
+  </div>
+  <div class="lg:w-1/2 ">
+    <div class="mt-36 bg-indigo-100 mr-16 rounded-lg">
+     <h1 class="ml-32 pt-24 text-black font-bold text-4xl mr-20">Get listed your home as a owner</h1>
+     <p class="text-grey-400 text-md ml-32 mt-6">Put your email address and get listed</p>
+     <div class="ml-32 mt-8 bg-white py-8 flex rounded-lg mr-10">
+      <p class="text-gray-500 text-md ml-4 font-bold"> Enter your email address</p>
+      <div class="bg-black ml-12  text-base  font-sans font-bold h-10 w-24 text-center rounded-lg">
+        <a href="#" class=" text-sm  leading-none   text-white   ">Get Listed</a>
+      </div>
+    </div>
+     <br>
+    </div>
+    </div>
+</div>
+<footer class="text-center lg:text-left bg-white text-gray-600">
+ 
+  <div class="mx-6 ml-18 text-center md:text-left">
+    <div class="grid grid-1 sm:grid-cols-2 md:grid-cols-5 gap-8">
+      <div class="">
+        <h6 class="text-black font-bold mb-4 flex items-center justify-center">
+          <img src="img/logo.jpg" alt="">
+          homefinder
+        </h6>
+        <p>
+          We committed to ensuring digital accessibility for individuals.
+        </p>
+        <img class="mt-8" src="img/banka.PNG" alt="">
+      </div>
+      <div class="">
+        <h6 class="text-black font-bold font-semibold mb-4 flex ">
+          Support
+        </h6>
+        <p class="mb-4">
+          <a href="#!" class="text-gray-600">Help Videos</a>
+        </p>
+        <p class="mb-4">
+          <a href="#!" class="text-gray-600">Accessories</a>
+        </p>
+        <p class="mb-4">
+          <a href="#!" class="text-gray-600">Support</a>
+        </p>
+        <p>
+          <a href="#!" class="text-gray-600">View Booking</a>
+        </p>
+        <p>
+          <a href="#!" class="text-gray-600">Features</a>
+        </p>
+      </div>
+      <div class="">
+        <h6 class="text-black font-bold font-semibold mb-4 flex justify-center md:justify-start">
+          Service
+        </h6>
+        <p class="mb-4">
+          <a href="#!" class="text-gray-600">Payment & tax</a>
+        </p>
+        <p class="mb-4">
+          <a href="#!" class="text-gray-600">Accessories</a>
+        </p>
+        <p class="mb-4">
+          <a href="#!" class="text-gray-600">Support</a>
+        </p>
+        <p>
+          <a href="#!" class="text-gray-600">Terms of Service</a>
+        </p>
+        <p>
+          <a href="#!" class="text-gray-600">Features</a>
+        </p>
+      </div>
+      <div class="">
+        <h6 class= " ml-0 text-black font-bold font-semibold mb-4 flex justify-center md:justify-start">
+          About
+        </h6>
+        <p>
+          <a href="#!" class="text-gray-600">About us</a>
+        </p>
+        <p>
+          <a href="#!" class="text-gray-600">Announcements</a>
+        </p>
+        <p>
+          <a href="#!" class="text-gray-600">Contact</a>
+        </p>
+        <p>
+          <a href="#!" class="text-gray-600">News</a>
+        </p>
+        <p>
+          <a href="#!" class="text-gray-600">Features</a>
+        </p>
+      </div>
+      <div class="">
+        <h6 class="text-black font-bold mb-4 flex items-center justify-center ">
+          Our Address
+        </h6>
+        <p>
+        1485 Par Drive, Burbank Street, California, CA
+        </p>
+        <div class="flex mt-4">
+          <a href="#!" class="mr-2 h-10 w-10  text-green-800 bg-white hover:bg-green-800 hover:text-white rounded-full">
+            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f"
+              class="w-2.5 ml-4 mt-4" role="img" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 320 512">
+              <path fill="currentColor"
+                d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+              </path>
+            </svg>
+          </a>
+
+          <a href="#!" class="mr-6 h-10 w-10  text-green-800 bg-white hover:bg-green-800 hover:text-white rounded-full">
+            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter"
+              class="w-4 ml-4 mt-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path fill="currentColor"
+                d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+              </path>
+            </svg>
+          </a>
+          <a href="#!" class="mr-6 mr-6 h-10 w-10  text-green-800 bg-white hover:bg-green-800 hover:text-white rounded-full">
+            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google"
+              class="w-3.5 ml-4 mt-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512">
+              <path fill="currentColor"
+                d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z">
+              </path>
+            </svg>
+          </a>
+          <a href="#!" class="mr-6 mr-6 h-10 w-10  text-green-800 bg-white hover:bg-green-800 hover:text-white rounded-full">
+            <svg class="w-3.5 ml-4 mt-4"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  
+              <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />  <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class=" bg-white  ml-12 mt-12">
+    
+    <span>All right Reserved @homefiner. 2020</span>
+   
+    <a class="ml-96 text-gray-600 mr-8" href="#">Services</a>
+    <a class="text-gray-600 mr-8" href="#">Partners</a>
+    <a class="text-gray-600 mr-8" href="#">Feedbacks</a>
+    <a class="text-gray-600 mr-8" href="#">Booking</a>
+
+</div>
+</footer>
+</body>
+</html>

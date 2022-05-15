@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+            
+             backgroundImage:(theme)=>({
+                 'arkaplan-img':"url('img/arkaplan.PNG')",
+                 '2-img':"url('img/2.jpg')",
+                 '11-img':"url('img/11.PNG')",
+                 'parrot-img':"url('img/parrot.jpg')",
+                 'parrot2-img':"url('img/parrot2.jpg')",
+             }) ,
+             spacing: {
+        '74': '19rem',
+      },
+            fontSize: {
+            'xs': '.75rem',
+            'sm': '.875rem',
+            'tiny': '.875rem',
+            'base': '1rem',
+            'lg': '1.125rem',
+            'xl': '1.25rem',
+            '2xl': '1.5rem',
+            '3xl': '1.875rem',
+            '4xl': '2.25rem',
+            '5xl': '3rem',
+            '6xl': '4rem',
+            '7xl': '5rem',
+          }
+          }
+          
+        }
+
+        }
+      </script>
+    <title>ParrotNursery</title>
+</head>
+<body >
+  <div class="bg-arkaplan-img bg-cover ">
+  <nav class="flex items-center justify-between flex-wrap p-6 text-center ">
+        
+          <div class="text-2xl text-sky-500 tracking-wide ml-2 font-semibold bg-white rounded-2xl">
+            <a class="text-amber-400 font-bold"> &nbsp;.</a> Parrot.com&nbsp;
+          </div>
+            &nbsp;
+            &nbsp;
+            &nbsp;
+          <div class=" relative flex flex-wrap  ">
+            <input type="search" class="form-control relative flex-auto min-w-0 block px-3 py-1.5 text-base font-normal text-gray-700 bg-inherit border-blue-600 border-8 bg-clip-padding border border-solid  rounded rounded-full transition ease-in-out m-0  " placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
+            <button class="btn inline-block px-6 py-2.5 bg-inherit text-gray-50 font-medium text-xs leading-tight uppercase rounded shadow-md  active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out flex items-center absolute left-36" type="button" id="button-addon2">
+              <svg  aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="w-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
+              </svg>
+            </button>
+          </div>
+        
+  
+      <div class="block lg:hidden">
+        <button class="flex items-center px-3 py-2 border rounded text-black border-teal-50 hover:text-white hover:border-white">
+          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+        </button>
+      </div>
+      
+      <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+        <div class="text-base lg:flex-grow font-sans font-bold">
+                    
+        </div>
+        
+        <div class="text-base  font-sans font-bold">
+          <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white mr-7">
+            Shop
+            </a>
+            <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white mr-7 ">
+                Home
+            </a>
+          <a href="#" class="block mt-4 lg:inline-block lg:mt-0  text-white mr-7 ">
+            <a class="text-amber-400">.</a>
+          <a class="text-white">(800)000-00-00</a>
+        </a>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="lg:flex">
+      <div class="lg:w-1/2 xl:max-w-screen-sm">
+       
+          <div class="mt-40 ml-16 px-8 sm:px-18 lg:px-35 lg:px-8 lg:mt-12 md:px-20 md:max-w-5xl">
+              <h2  class="mt-12  font-bold mb-2.5 text-black font-bold leading-none   md:text-base lg:text-left lg:text-7xl
+              xl:text-bold">Parrot<a class="text-amber-400">&nbsp;.</a> <br> nursery</h2> 
+
+              <div class="mt-8">
+                  <form>
+                      
+                      <p> Here you can buy the rarest species of parrots. <br>We provide interest-free installments up to 24 months. </p>
+                      <div class="mt-10 h-12  ">
+                          <button class="bg-sky-600 text-white p-4 font-semibold font-display hover:bg-sky-800 rounded-full">
+                            &nbsp; &nbsp; GO TO STORE &nbsp;&nbsp;
+                          </button>
+                          
+                      </div>
+                  </form>
+                  
+              </div>
+          </div>
+      </div>
+      <div class="static hidden lg:flex  justify-center flex-1 h-screen bg-code-img bg-cover ">         
+        <div class=" absolute right-8 sm:px-18 md:px-40 lg:px-8 xl:px-20 xl:max-w-4xl">
+          <h2 class=" mt-20 text-4xl text-white font-bold leading-none lg:text-left xl:text-4xl xl:text-bold">Ara - <br> parrot</h2>
+          <div class="mt-4">
+              <form>                  
+                  <p> They are oble to learn and<br>
+                     reproduce no more than 30 words,<br>
+                     but they do it so intelligently that it<br>
+                      seems as if they understand what <br>
+                       they are talking about.  </p>
+                  <div class="mt-10">
+                      <button class="bg-sky-600 text-white p-4 font-semibold font-display border-white border-2 rounded-full">
+                         more details
+                      </button>
+                     
+                  </div>
+              </form>
+              
+          </div>
+      </div>
+
+      </div>  
+
+  </div>
+</div>
+<div class="bg-slate-800">
+  <h1 class=" pl-16 text-sky-500 text-7xl p-6 font-bold text-serif">.<a class="text-white text-4xl"> Catalog </a></h1>
+  <div class="p-16 grid grid-cols-1 gap-6 lg:gap-8 lg:grid-cols-2 lg:grid-cols-3 lg:grid-cols-4 max-h-[33rem] overflow-hidden ">
+    <ul class="space-y-8  bg-white rounded rounded-2xl cursor-pointer">
+      <li class="text-sm leading-6 ">
+       <div class="rounded overflow-hidden ">
+          <img class="w-full h-full rounded rounded-2xl" src="/img/1.PNG" alt="" />
+        
+        </div> 
+        <h1 class=" mt-6 text-black text-lg font-bold ml-2">Red Ara</h1>      
+        <p class=" mt-2 text-black text-lg ml-2">2.200$</p>
+        <div class="flex">
+         
+          <div class="h-8 w-8 mt-6 ml-2 mb-2 text-white bg-sky-600 border-white rounded-full text-center ">
+               <a class="font-bold text-2xl" href="">+</a>
+          </div>
+        <p class="mt-6 ml-2">Select</p>
+        <div class="ml-20 mt-8  ">
+        <a href="#" class="py-2 px-2 rounded text-center rounded-full  text-black border bg-inherit border-blue-600 ">&nbsp; More&nbsp;</a>
+      </div>
+    </div>
+    </li> 
+    </ul>
+    <ul class="space-y-8  bg-white rounded rounded-2xl cursor-pointer">
+        <li class="text-sm leading-6">
+         <div class="rounded overflow-hidden  ">
+            <img class="w-full h-full rounded-2xl" src="/img/2.PNG" alt="" />
+          
+          </div> 
+          <h1 class=" mt-6 text-black text-lg font-bold ml-2">Blue yellow Ara</h1>      
+          <p class=" mt-2 text-black text-lg ml-2">2.200$</p>
+          <div class="flex">
+          <div class="h-8 w-8 mt-6 ml-2 mb-2 text-white bg-sky-600 border-white rounded-full text-center ">
+              <a class="font-bold text-2xl" href="">+</a>
+         </div>
+          <p class="mt-6 ml-2">Select</p>
+          <div class="ml-20 mt-8  ">
+            <a href="#" class="py-2 px-2 rounded text-center rounded-full  text-black border bg-inherit border-blue-600 ">&nbsp; More&nbsp;</a>
+          </div> 
+      </div>
+      </li> 
+      </ul>
+          
+      <ul class="space-y-8  bg-white rounded rounded-2xl cursor-pointer">
+        <li class="text-sm leading-6">
+         <div class="rounded overflow-hidden  ">
+            <img class="w-full h-full rounded-2xl" src="/img/3.PNG" alt="" />
+          
+          </div> 
+          <h1 class=" mt-6 text-black text-lg font-bold ml-2">Green Ara</h1>      
+          <p class=" mt-2 text-black text-lg ml-2">2.200$</p>
+          <div class="flex">
+            <div class="h-8 w-8 mt-6 ml-2 mb-2 text-white bg-sky-600 border-white rounded-full text-center ">
+              <a class="font-bold text-2xl" href="">+</a>
+         </div>
+          <p class="mt-6 ml-2">Select</p>
+          <div class="ml-20 mt-8  ">
+            <a href="#" class="py-2 px-2 rounded text-center rounded-full  text-black border bg-inherit border-blue-600 ">&nbsp; More&nbsp;</a>
+          </div> 
+      </div>
+      </li> 
+      </ul> 
+      <ul class="space-y-8 bg-white rounded rounded-2xl cursor-pointer">
+        <li class="text-sm leading-6">
+         <div class="rounded overflow-hidden ">
+            <img class="w-full h-full rounded-2xl" src="img/4.PNG" alt="" />
+          
+          </div> 
+          <h1 class=" mt-6 text-black text-lg font-bold ml-2">Blue Ara</h1>      
+          <p class=" mt-2 text-black text-lg ml-2">2.200$</p>
+          <div class="flex">
+            <div class="h-8 w-8 mt-6 ml-2 mb-2 text-white bg-sky-600 border-white rounded-full text-center ">
+              <a class="font-bold text-2xl" href="">+</a>
+         </div>
+          <p class="mt-6 ml-2">Select</p>
+          <div class="ml-20 mt-8  ">
+            <a href="#" class="py-2 px-2 rounded text-center rounded-full  text-black border bg-inherit border-blue-600 ">&nbsp; More&nbsp;</a>
+          </div>
+      </div>
+      </li> 
+      </ul>
+  </div>
+          <br>
+        
+          <div class="p-10 mt-10 grid grid-cols-1 gap-6 lg:gap-8 lg:grid-cols-2 lg:grid-cols-3 lg:grid-cols-4 max-h-[33rem] overflow-hidden">
+            <ul class="space-y-8  bg-white rounded rounded-2xl cursor-pointer ">
+              <li class="text-sm leading-6 rounded rounded-2xl">
+               <div class="rounded overflow-hidden ">
+                  <img class="w-full h-full rounded-2xl" src="img/5.PNG" alt="" />
+                
+                </div> 
+                <h1 class=" mt-6 text-black text-lg font-bold ml-2">Inca cockatoo</h1>      
+                <p class=" mt-2 text-black text-lg ml-2">2.200$</p>
+                <div class="flex">
+                  <div class="h-8 w-8 mt-6 ml-2 mb-2 text-white bg-sky-600 border-white rounded-full text-center ">
+                    <a class="font-bold text-2xl" href="">+</a>
+               </div> 
+               <p class="mt-6 ml-2">Select</p>
+               <div class="ml-20 mt-8  ">
+                <a href="#" class="py-2 px-2 rounded text-center rounded-full  text-black border bg-inherit border-blue-600 ">&nbsp; More&nbsp;</a>
+              </div>  
+            </div>
+            </li> 
+            </ul>
+            <ul class="space-y-8  bg-white rounded rounded-2xl cursor-pointer">
+                <li class="text-sm leading-6">
+                 <div class="rounded overflow-hidden  ">
+                    <img class="w-full h-full rounded-2xl" src="img/6.PNG" alt="" />
+                  
+                  </div> 
+                  <h1 class=" mt-6 text-black text-lg font-bold ml-2">Golden-bellied grass</h1>      
+                  <p class=" mt-2 text-black text-lg ml-2">2.200$</p>
+                  <div class="flex">
+                    <div class="h-8 w-8 mt-6 ml-2 mb-2 text-white bg-sky-600 border-white rounded-full text-center ">
+                      <a class="font-bold text-2xl" href="">+</a>
+                 </div>
+                  <p class="mt-6 ml-2">Select</p>
+                  <div class="ml-20 mt-8  ">
+                    <a href="#" class="py-2 px-2 rounded text-center rounded-full  text-black border bg-inherit border-blue-600 ">&nbsp; More&nbsp;</a>
+                  </div>  
+              </div>
+              </li> 
+              </ul>
+                  
+              <ul class="space-y-8  bg-white rounded rounded-2xl cursor-pointer">
+                <li class="text-sm leading-6">
+                 <div class="rounded overflow-hidden  ">
+                    <img class="w-full h-full rounded-2xl" src="img/7.PNG" alt="" />
+                  
+                  </div> 
+                  <h1 class=" mt-6 text-black text-lg font-bold ml-2">Cockatoo gala</h1>      
+                  <p class=" mt-2 text-black text-lg ml-2">2.200$</p>
+                  <div class="flex">
+                    <div class="h-8 w-8 mt-6 ml-2 mb-2 text-white bg-sky-600 border-white rounded-full text-center ">
+                      <a class="font-bold text-2xl" href="">+</a>
+                 </div>
+                  <p class="mt-6 ml-2">Select</p>
+                  <div class="ml-20 mt-8  ">
+                    <a href="#" class="py-2 px-2 rounded text-center rounded-full  text-black border bg-inherit border-blue-600 ">&nbsp; More&nbsp;</a>
+                  </div> 
+              </div>
+              </li> 
+              </ul> 
+              <ul class="space-y-8 bg-white rounded rounded-2xl cursor-pointer">
+                <li class="text-sm leading-6">
+                 <div class="rounded overflow-hidden ">
+                    <img class="w-full h-full rounded-2xl" src="img/8.PNG" alt="" />
+                  
+                  </div> 
+                  <h1 class=" mt-6 text-black text-lg font-bold ml-2">Black palm cockatoo</h1>      
+                  <p class=" mt-2 text-black text-lg ml-2">2.200$</p>
+                  <div class="flex">
+                    <div class="h-8 w-8 mt-6 ml-2 mb-2 text-white bg-sky-600 border-white rounded-full text-center ">
+                      <a class="font-bold text-2xl" href="">+</a>
+                 </div>
+                  <p class="mt-6 ml-2">Select</p>
+                  <div class="ml-20 mt-8  ">
+                    <a href="#" class="py-2 px-2 rounded text-center rounded-full  text-black border bg-inherit border-blue-600 ">&nbsp; More&nbsp;</a>
+                  </div> 
+              </div>
+              </li> 
+              </ul>
+          </div>  
+            <div class="mt-10 ml-8 mb-8 flex">
+              <button class="bg-inherit text-white p-4 font-semibold font-display border-white border-2 rounded-full">
+                 Go to catalog
+              </button>
+              <svg class="h-8 w-8 text-white mt-4"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+              
+          </div> 
+          <br><br>
+     </div> 
+     <div class="lg:flex bg-slate-800">
+      <div class="lg:w-1/2 xl:max-w-screen-sm bg-parrot-img bg-cover bg-inherit">
+          
+      </div>
+      <div class="hidden lg:flex items-center justify-center  flex-1 h-screen">
+          
+              
+              <div class="mt-10 px-12 sm:px-24 md:px-48 lg:px-12 lg:mt-16 xl:px-24 xl:max-w-2xl text-white">
+                  <h2 class="text-center text-2xl text-amber-500 font-display font-semibold lg:text-left xl:text-5xl
+                  xl:text-bold">. <a class="text-white"> About Us </a></h2>
+                          <p class="mt-12">Our nursery is engoged in professional breeding of parrots and omamental birds. Our main features are selection of birds, strict veterinary control.The parrots purchased from our nursery will bring joy and pleasure to you and your loved ones for many years!</p>
+                          <p class="mt-6"> The constant development of our team ensures maximum comford for the birds and our customers. Wee strive to bring feathered happiness to every home while preserving the gene pool of most parrot species.</p>
+              <br>
+              <br>
+              <div class="flex">
+               <div class="w-[150px] h-[150px] bg-white rounded-full border-sky-500 border-4 bottom-2 justify-center text-center
+                items-center mr-7">
+               <p class= "text-5xl font-bold text-sky-500">10</p>
+               <p  class="text-black text-sm">years on <br>the market</p>
+               
+               </div>
+               <div class="w-[150px] h-[150px] bg-white rounded-full border-sky-500 border-4 bottom-2 justify-center text-center
+               items-center mr-7">
+              <p class= "text-5xl font-bold text-sky-500">16</p>
+              <p  class="text-black text-sm">bird <br>speces</p>
+              
+              </div>
+              <div class="w-[150px] h-[150px] bg-white rounded-full border-sky-500 border-4 bottom-2 justify-center text-center
+              items-center">
+             <p class= "text-5xl font-bold text-sky-500">1</p>
+             <p  class="text-black text-sm">a year of veberinary<br>cinic for free</p>
+             
+             </div>
+          </div>
+               </div>
+          </div>
+        
+      </div>
+      
+     
+      <div class="lg:flex bg-[#ebebeb] p-16">
+        <div class="lg:w-1/2 xl:max-w-screen-sm">
+          <h2 class="text-center text-2xl text-blue-600 font-bold  lg:text-left xl:text-5xl
+          xl:text-bold">. <a  class="text-black"> Leave a request</a>  </h2>
+           <p class="mt-12">Fill out the application form and we <br> will help you  choose your future friend!</p>
+           <form action="" class="bg-white   mt-16">
+               <h1 class="p-16 text-4xl text-balack font-bold">Form</h1>
+      
+               <input class="ml-16 mb-8  shadow appearance-none border border-sky-600 rounded rounded-full w-1/2 py-4 px-3 text-gray-800 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username"><br>
+               <input class="ml-16 mb-8 shadow appearance-none border border-sky-600 rounded rounded-full w-1/2 py-4 px-3 text-gray-800 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username"><br>
+               <input class="ml-16 shadow appearance-none border border-sky-500 rounded rounded-full w-1/2 py-4 px-3 text-gray-800 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username"><br>
+               <button class="ml-16 mt-10 bg-sky-600 text-white p-4  rounded-full tracking-wide
+               font-semibold font-display focus:outline-none focus:shadow-outline hover:bg-sky-800
+               shadow-lg">
+                   SEND
+               </button>
+               <div class=" ml-16  mt-8 flex mt-6">
+                <label class="flex items-center mb-20">
+                  <input type="checkbox" class="form-checkbox">
+                  <span class="ml-2">I agree to the <span class="underline">privacy policy</span></span>
+                </label>
+              </div>
+           
+          
+         </form>
+        </div>
+        <div class="hidden bg-11-img bg-cover mt-36 lg:flex items-center justify-center flex-1 h-screen">
+           
+        </div>
+    </div>
+      <footer class=" bg-slate-800 text-center lg:text-left">
+          <h1 class="  ml-16 text-2xl text-sky-600 font-bold pt-12"> <a class="text-orange-600 font-bold text-6xl ">.</a> Parrot.com</h1>
+          <div class="container p-6">
+            <div class="grid lg:grid-cols-4 md:grid-cols-2">
+              <div class="mb-6">
+                <h5 class="ml-12 uppercase font-bold mb-2.5 text-white">INN / KPP</h5>
+        
+                <ul class="ml-12 list-none mb-0">
+                  <li>
+                    <a href="#!" class=" text-white">1234567892/1234</a>
+                  </li>
+                  <li class="mt-8">
+                    <a href="#!" class="font-bold text-white">Yur. address</a>
+                  </li>
+                  <li class="mt-2">
+                    <a href="#!" class=" text-white">Moscow, pos. Kubbyshevsky, <br> block 4, 110 p-3</a>
+                  </li>
+                  
+                </ul>
+              </div> 
+        
+              <div class="mb-6">
+                <h5 class="uppercase font-bold mb-2.5 text-white">Catalog</h5>
+        
+                <ul class="list-none mb-0">
+                  <li >
+                    <a href="#!" class="text-white">Red Ara</a>
+                  </li >
+                  <li class="mt-2">
+                    <a href="#!" class="text-white">Blue yellow Ara</a>
+                  </li>
+                  <li class="mt-2">
+                    <a href="#!" class="text-white">Green Ara</a>
+                  </li>
+                  <li class="mt-2">
+                    <a href="#!" class="text-white">Blue Ara</a>
+                  </li>
+                  <li class="mt-2">
+                      <a href="#!" class="text-white">Other...</a>
+                    </li>
+                </ul>
+              </div>
+        
+              <div class="mb-6">
+                  <h5 class="uppercase font-bold mb-2.5 text-white">About Us</h5>
+          
+                  <ul class="list-none mb-0">
+                    <li>
+                      <a href="#!" class="text-white">Red Ara</a>
+                    </li>
+                    <li class="mt-2">
+                      <a href="#!" class="text-white">Blue yellow Ara</a>
+                    </li>
+                    <li class="mt-2">
+                      <a href="#!" class="text-white">Green Ara</a>
+                    </li>
+                    <li class="mt-2">
+                      <a href="#!" class="text-white">Blue Ara</a>
+                    </li>
+                    <li class="mt-2">
+                        <a href="#!" class="text-white">Other...</a>
+                      </li>
+                  </ul>
+                </div>
+        
+                <div class="mb-6">
+                  <h5 class="uppercase font-bold mb-2.5 text-white">Facebook</h5>
+          
+                  <ul class="list-none mb-0">
+                    <li>
+                      <a href="#!" class="text-white">Instagram</a>
+                    </li>
+                    <li class="mt-6">
+                      <a href="#!" class="text-white">Twitter</a>
+                    </li>
+                    <div class="mt-6 relative flex flex-wrap  ">
+                      <input type="search" class="form-control relative flex-auto min-w-0 block px-3 py-1.5 text-base font-normal text-slate-100 bg-inherit border-sky-600 border-2 bg-clip-padding border border-solid  rounded rounded-full transition ease-in-out m-0  " placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
+                      <button class="btn inline-block px-6 py-2.5 bg-inherit text-white font-medium text-xs leading-tight uppercase rounded shadow-md  active:bg-sky-800 active:shadow-lg transition duration-150 ease-in-out flex items-center absolute right-0" type="button" id="button-addon2">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="w-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        
+          
+        </footer>
+</body>
+</html>

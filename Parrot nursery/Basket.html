@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+            
+             backgroundImage:(theme)=>({
+                 'b-img':"url('img/b.PNG')",
+                 
+             }) ,
+             spacing: {
+        '74': '19rem',
+      },
+            fontSize: {
+            'xs': '.75rem',
+            'sm': '.875rem',
+            'tiny': '.875rem',
+            'base': '1rem',
+            'lg': '1.125rem',
+            'xl': '1.25rem',
+            '2xl': '1.5rem',
+            '3xl': '1.875rem',
+            '4xl': '2.25rem',
+            '5xl': '3rem',
+            '6xl': '4rem',
+            '7xl': '5rem',
+          }
+          }
+          
+        }
+
+        }
+      </script>
+    <title>Basket</title>
+</head>
+<body class="bg-[#ebebeb]">
+    <div class="lg:flex">
+        <div class="lg:w-1/2 xl:max-w-screen-sm">
+            
+            <div class=" px-12 sm:px-24 md:px-48 lg:px-12 lg:mt-16 xl:px-24 xl:max-w-2xl">
+               
+                <div class="mt-12">
+                    <form action="" class="bg-parrot2-img bg-cover rounded-2xl mt-16">
+                        <h1 class="p-10 text-4xl text-balack font-bold">Your cart</h1>
+               
+                        <input class="ml-10 mb-8  shadow appearance-none border border-sky-600 rounded rounded-full w-72 py-4 px-3 text-gray-800 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Your name"><br>
+                        <input class="ml-10 mb-8 shadow appearance-none border border-sky-600 rounded rounded-full w-72 py-4 px-3 text-gray-800 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Your phone"><br>
+                        <input class="ml-10 shadow appearance-none border border-sky-500 rounded rounded-full w-72 py-4 px-3 text-gray-800 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Your Email"><br><br>
+                        <input class="ml-10 shadow appearance-none border border-sky-500 rounded rounded-full w-72 py-4 px-3 text-gray-800 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Delivery address"><br>
+                       
+                        <h1 class="p-10 text-ms text-balack font-bold">Select a Payment Method</h1>
+                        <div class="ml-12">
+                            <label class="inline-flex items-center">
+                              <input type="radio" class="form-radio" name="accountType" value="personal">
+                              <span class="ml-2">In cash</span>
+                            </label>
+                            <label class="inline-flex items-center ml-6">
+                              <input type="radio" class="form-radio" name="accountType" value="busines">
+                              <span class="ml-2">Apple Pay</span>
+                            </label>
+                            <label class="inline-flex items-center ml-6">
+                                <input type="radio" class="form-radio" name="accountType" value="busines">
+                                <span class="ml-2">By card upon receipt</span>
+                              </label>
+                          </div>
+                        
+                        <button class="ml-10 mt-8  bg-sky-600 text-white p-4 w-32 rounded-full tracking-wide
+                        font-semibold font-display focus:outline-none focus:shadow-outline hover:bg-sky-800
+                        shadow-lg">
+                            CHECKOUT
+                        </button><br>
+                        <label class="mt-6 inline-flex items-center ml-6 text-xs">
+                            <input type="radio" class="form-radio" name="accountType" value="busines">
+                            <span class="ml-2">By clickinng the Submit button you <br> are giving on data services</span>
+                          </label>
+                  </form>
+                </div>
+            </div>
+        </div>
+        <div class="hidden lg:flex items-center justify-center bg-b-img bg-cover flex-1 h-screen">
+            
+        </div>
+    </div>
+</body>
+</html>
